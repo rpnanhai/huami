@@ -1,0 +1,49 @@
+preset: PSR2
+
+risky: false
+
+enabled:
+  - no_empty_statement
+  - no_extra_consecutive_blank_lines
+  - include
+  - no_trailing_comma_in_list_call
+  - no_leading_namespace_whitespace
+  - no_blank_lines_after_class_opening
+  - no_blank_lines_after_phpdoc
+  - object_operator_without_whitespace
+  - binary_operator_spaces
+  - phpdoc_indent
+  - phpdoc_no_access
+  - phpdoc_no_package
+  - phpdoc_scalar
+  - phpdoc_to_comment
+  - phpdoc_trim
+  - phpdoc_type_to_var
+  - phpdoc_var_without_name
+  - no_leading_import_slash
+  - remove_lines_between_uses
+  - self_accessor
+  - no_trailing_comma_in_singleline_array
+  - single_blank_line_before_namespace
+  - single_quote
+  - align_equals
+  - no_singleline_whitespace_before_semicolons
+  - cast_spaces
+  - standardize_not_equals
+  - concat_with_spaces
+  - ternary_operator_spaces
+  - trim_array_spaces
+  - unary_operator_spaces
+  - no_whitespace_in_blank_line
+  - no_multiline_whitespace_before_semicolons
+  - no_unused_imports
+  - align_double_arrow
+  - short_array_syntax
+
+
+finder:
+  exclude:
+    - "vendor"
+  name:
+    - "*.php"
+
