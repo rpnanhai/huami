@@ -1,7 +1,5 @@
 *.DS_Store
-.gitmessage
 /vendor
 /coverage
 composer.lock
 .php_cs.cache
-.php_cs
