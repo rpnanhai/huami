@@ -16,7 +16,7 @@ script:
   - ./vendor/bin/phpunit -c tests/phpunit.xml --coverage-clover build/logs/clover.xml
 
 after_script:
-  - ./vendor/bin/coveralls -v
+  - travis_retry ./vendor/bin/coveralls -v
 
 matrix:
   fast_finish: true
