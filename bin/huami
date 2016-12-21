@@ -5,13 +5,16 @@ if (PHP_SAPI !== 'cli') {
     echo 'Warning: huami should be invoked via the CLI';
 }
 
-try {
-    $config = parse_ini_file(__DIR__. DIRECTORY_SEPARATOR . '../config.ini');
-} catch (Exception $e) {
-    $config = [];
+$config = [];
+if (file_exists($file = __DIR__. DIRECTORY_SEPARATOR . '../config.ini')){
+    $config = parse_ini_file($file);
 }
 
-require __DIR__.'/../vendor/autoload.php';
+if (file_exists($a = __DIR__.'/../../../autoload.php')) {
+    require_once $a;
+} else {
+    require_once __DIR__.'/../vendor/autoload.php';
+}
 
 use HuaMi\Command\HuaMiCommand;
 use HuaMi\Console\Application;

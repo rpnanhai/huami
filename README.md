@@ -1,7 +1,7 @@
 HuaMi
 =====
 
-花密(PHP CLI 版本),一个密码生成管理工具，原理和思路详见[官网](https://flowerpassword.com/)
+花密(PHP CLI 版本),一个密码生成管理工具，原理和思路详见<a href="https://flowerpassword.com/" target="_blank">花密官网</a>
 
 [![Build Status](https://travis-ci.org/rpnanhai/huami.svg?branch=master)](https://travis-ci.org/rpnanhai/huami)
 [![StyleCI](https://styleci.io/repos/76835858/shield?branch=master)](https://styleci.io/repos/76835858)
@@ -53,6 +53,15 @@ Help:
 ```
 
 如果你是mac系统的话，密码会自动复制到你的粘贴板^v^。
+
+另外如需设置自己的加密key，在项目根目录添加 ``config.ini`` 文件，内容格式如下：
+
+```
+[huami]
+strOne=rpnanhai
+strTwo=huami
+strThree=abcdef123456set
+```
 
 
 ## License
