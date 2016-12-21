@@ -1,7 +1,7 @@
 <?php
 
 /*
- * The file is part of the rpnanhai/HuaMi
+ * The file is part of the rpnanhai/huami
  *
  * (c) 2016 rpnanhai <rpnanhai@gamil.com>
  *
@@ -9,21 +9,22 @@
  * with this source code in the file LICENSE.
  */
 
+
 namespace HuaMi\Tests;
 
-use Symfony\Component\Console\Application;
+use HuaMi\Command\HuaMiCommand;
+use HuaMi\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
-use HuaMi\HuaMi;
 
-class HuaMiTests extends \PHPUnit_Framework_TestCase
+class HuaMiCommandTests extends \PHPUnit_Framework_TestCase
 {
     public function testExecute()
     {
         $application = new Application();
-        $application->add(new HuaMi('aaa'));
-        $command       = $application->find('test');
+        $application->add(new HuaMiCommand);
+        $command       = $application->find('huami');
         $commandTester = new CommandTester($command);
-        $commandTester->execute(['command' => 'aaa']);
+        $commandTester->execute(['key' => 'aaa','password' => '123']);
         $this->assertRegExp('//', $commandTester->getDisplay());
     }
 }

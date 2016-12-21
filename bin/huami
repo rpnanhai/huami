@@ -1,11 +1,22 @@
 #!/usr/bin/env php
 <?php
 
+if (PHP_SAPI !== 'cli') {
+    echo 'Warning: huami should be invoked via the CLI';
+}
+
+try {
+    $config = parse_ini_file(__DIR__. DIRECTORY_SEPARATOR . '../config.ini');
+} catch (Exception $e) {
+    $config = [];
+}
+
 require __DIR__.'/../vendor/autoload.php';
 
-use HuaMi\HuaMi;
-use Symfony\Component\Console\Application;
+use HuaMi\Command\HuaMiCommand;
+use HuaMi\Console\Application;
+
 
 $application = new Application();
-$application->add(new HuaMi("hello console"));
+$application->add(new HuaMiCommand($config));
 $application->run();

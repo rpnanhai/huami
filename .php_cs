@@ -3,7 +3,7 @@
 $year = date('Y');
 
 $header = <<<EOF
-The file is part of the rpnanhai/HuaMi
+The file is part of the rpnanhai/huami
 
 (c) $year rpnanhai <rpnanhai@gamil.com>
 
