@@ -42,7 +42,7 @@ $fixers = array(
     'phpdoc_no_alias_tag'       => array('type' => 'var'),// @type 需要使用 @var 代替；
     'phpdoc_var_without_name'   => true, //@var 和 @type 注释中不应该包含变量名；
     'no_leading_import_slash'   => true, //删除 use 前的空行；
-    'no_extra_consecutive_blank_lines'  => array('use'), //删除 use 语句块中的空行；
+    //'no_extra_consecutive_blank_lines'  => array('use'), //删除 use 语句块中的空行；
     'self_accessor'             => true, //在当前类中使用 self 代替类名；
     'no_trailing_comma_in_singleline_array' => true, //PHP 单行数组最后一个元素后面不应该有空格；
     'single_blank_line_before_namespace' => true,//命名空间声明前应该有一个空白行；

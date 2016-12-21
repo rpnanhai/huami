@@ -9,11 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-
 namespace HuaMi;
 
 class Utils
 {
+    /**
+     * [copyContent osx下复制内容]
+     * @param  string $content [要复制的内容]
+     * @return bool
+     */
     public static function copyContent($content)
     {
         if (strtoupper(substr(PHP_OS, 0, 3)) == 'DAR') {

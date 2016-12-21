@@ -9,7 +9,6 @@
  * with this source code in the file LICENSE.
  */
 
-
 namespace HuaMi\Tests;
 
 use HuaMi\Command\HuaMiCommand;
@@ -18,6 +17,9 @@ use Symfony\Component\Console\Tester\CommandTester;
 
 class HuaMiCommandTests extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * [testExecute HuaMiCommand测试]
+     */
     public function testExecute()
     {
         $application = new Application();

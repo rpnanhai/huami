@@ -9,5 +9,4 @@
  * with this source code in the file LICENSE.
  */
 
-
 require __DIR__ . '/../vendor/autoload.php';

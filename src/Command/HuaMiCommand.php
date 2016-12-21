@@ -22,12 +22,19 @@ class HuaMiCommand extends Command
 {
     private $config = [];
 
+    /**
+     * [__construct]
+     * @param array $config [配置文件config.ini]
+     */
     public function __construct($config=[])
     {
         parent::__construct();
         $this->config = $config;
     }
 
+    /**
+     * [configure command配置]
+     */
     protected function configure()
     {
         $this
@@ -45,6 +52,11 @@ class HuaMiCommand extends Command
             );
     }
 
+    /**
+     * [execute]
+     * @param  InputInterface  $input
+     * @param  OutputInterface $output
+     */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $huami  = new HuaMi($this->config);
