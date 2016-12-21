@@ -23,6 +23,9 @@
   },
   "autoload-dev": {
     "psr-4": { "HuaMi\\Tests\\": "tests/" }
-  }
+  },
+  "bin": [
+    "bin/huami"
+  ]
 
 }

@@ -17,7 +17,7 @@ use Symfony\Component\Console\Input\InputInterface;
 class Application extends SymfonyConsoleApplication
 {
     const NAME    = 'huami';
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
 
     public function __construct()
     {
