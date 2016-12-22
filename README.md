@@ -63,7 +63,7 @@ strTwo=huami
 strThree=abcdef123456set
 ```
 
-如果需要设置自己的加密key的话。安卓版本推荐这个[花密](https://play.google.com/store/apps/details?id=com.zxc.huami&hl=zh_CN)
+安卓版本推荐这个[花密](https://play.google.com/store/apps/details?id=com.zxc.huami&hl=zh_CN)
 
 
 ## License
