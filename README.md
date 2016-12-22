@@ -54,7 +54,7 @@ Help:
 
 如果你是mac系统的话，密码会自动复制到你的粘贴板^v^。
 
-另外如需设置自己的加密key，在项目根目录添加 ``config.ini`` 文件，内容格式如下：
+另外如需设置自己的加密key，在项目根目录把 ``config.ini.bak`` 修改为 ``config.ini`` ，内容格式如下：
 
 ```
 [huami]
@@ -62,6 +62,8 @@ strOne=rpnanhai
 strTwo=huami
 strThree=abcdef123456set
 ```
+
+如果需要设置自己的加密key的话。安卓版本推荐这个[花密](https://play.google.com/store/apps/details?id=com.zxc.huami&hl=zh_CN)
 
 
 ## License
