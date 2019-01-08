@@ -1,6 +1,6 @@
 preset: PSR2
 
-risky: true
+risky: false
 
 enabled:
   - no_empty_statement
@@ -22,7 +22,6 @@ enabled:
   - phpdoc_var_without_name
   - no_leading_import_slash
   - remove_lines_between_uses
-  - self_accessor
   - no_trailing_comma_in_singleline_array
   - single_blank_line_before_namespace
   - single_quote
