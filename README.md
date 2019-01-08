@@ -63,7 +63,6 @@ strTwo=huami
 strThree=abcdef123456set
 ```
 
-安卓版本推荐这个[花密](https://play.google.com/store/apps/details?id=com.zxc.huami&hl=zh_CN)
 
 
 ## License
