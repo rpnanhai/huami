@@ -1,6 +1,6 @@
 preset: PSR2
 
-risky: false
+risky: true
 
 enabled:
   - no_empty_statement
